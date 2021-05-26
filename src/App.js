@@ -4,11 +4,11 @@ import { withAuthenticator } from 'aws-amplify-react'
 import * as d3 from 'd3'
 import moment from 'moment'
 
-import awsconfig from './aws-exports'
-import { startQuery, queryByOwner } from './graphql/queries'
-import { onUpdateAthenaOperation } from './graphql/subscriptions'
-import codes from './country-codes'
-import { drawChart } from './hexabin-helper'
+import awsconfig from './aws-exports.js'
+import { startQuery, queryByOwner } from './graphql/queries.js'
+import { onUpdateAthenaOperation } from './graphql/subscriptions.js'
+import codes from './country-codes.js'
+import { drawChart } from './hexabin-helper.js'
 
 Amplify.configure(awsconfig)
 
